@@ -1,6 +1,4 @@
 {% if page.comments %}
-{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
-
   {% if theme.disqus_shortname %}
     <script type="text/javascript">
       var disqus_shortname = '{{theme.disqus_shortname}}';
@@ -86,9 +84,11 @@
 
         $('.show-commit-dsp').hide();
 
+        <!--
         // define duoshuoQuery
         var duoshuo_shortname = '{{theme.disqus_info.duoshuo_shortname}}';
         var duoshuoQuery = {short_name: duoshuo_shortname};
+        -->
 
         document.getElementById('show_commit_btn').onclick = function() {
           // if (!disqus_loaded) 
@@ -103,7 +103,7 @@
                 run_disqus_script('embed.js');
               {% endif %}
             }
-
+            <!--
             // else load duoshuo.
             else if (disqus_forbid) {
               if ($('.show-commit-dsp').css("display") == "none") {
@@ -128,19 +128,15 @@
                 </div>';
               t_comments.insertAdjacentHTML("afterBegin", duoshuo_comment);
             }
+            -->
           }
         }
 
       </script>
-      <!--
-      <img src="https://lh4.googleusercontent.com/-lOxRXbE0_FM/V59i2VnJDxI/AAAAAAAAAAg/f2MXiY-UaAc7_f1rJXOtpQ1lbNjqRF0MQCL0B/w142-h135/disqus.jpg" style="display: none" onload="google_allow()" onerror="google_forbid()"/>
-      -->
       <img src="http://disqus.com/api/users/avatars/disqus_api.jpg" style="display: none" onload="google_allow()" onerror="google_forbid()"/>
 
     {% endif %}
 
   {% endif %}
-
-{% endif %}
 
 {% endif %}
