@@ -65,13 +65,6 @@ auto_excerpt:
 # Note: this option is avialable only when the language is not `zh-Hans`
 use_font_lato: true
 
-# share server
-# JiaThis share
-jiathis: false
-
-# baidu share
-baidu_share: true
-
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
 

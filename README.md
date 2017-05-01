@@ -142,6 +142,12 @@ donate:
 # 不蒜子统计
 busuanzi: false
 
+# share server
+# JiaThis share
+jiathis: false
+
+# baidu share
+baidu_share: true
 
 # DISQUS 帐号 （如果已经设置 多说 帐号，此选项将被跳过）
 disqus_shortname: xxx # your-disqus-shortname
