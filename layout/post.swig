@@ -22,8 +22,6 @@
     <div class="post-spread">
       {% if theme.jiathis %}
         {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
       {% elseif theme.baidu_share %}
         {% include '_partials/share/baidu_share.swig' %}
       {% endif %}
